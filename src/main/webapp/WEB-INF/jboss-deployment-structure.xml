@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.2">
+    <deployment>
+        <dependencies>
+            <module name="org.jboss.resteasy.resteasy-jaxrs"/>
+            <module name="com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider"/>
+            <module name="org.jboss.resteasy.resteasy-jackson2-provider"/>
+            <module name="org.jboss.resteasy.resteasy-cdi" meta-inf="import"/>
+
+            <!--org.jboss.vfs add for flyway      -->
+            <module name="org.jboss.vfs"/>
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>
